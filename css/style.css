@@ -4,6 +4,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+img {
+    max-width: 100%;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 /* STYLE */
 body {
@@ -14,47 +24,130 @@ body {
 .wrapper {
     width: 100%;
     height: 100vh;
-    /* Debug */
-    background-color: lightblue;
 }
 main {
     width: 100%;
-    height: calc(100% - 80px);
+    height: calc(100% - 70px);
     display: flex;
-    /* Debug */
-    background-color: lightyellow;
 }
 footer {
     width: 100%;
-    height: 80px;
-    /* Debug */
-    background-color: lightgreen;
+    height: 70px;
+    background-color: #282828;
 }
 .side-bar {
-    width: 200px;
+    width: 250px;
     height: 100%;
-    /* Debug */
-    background-color: lightcoral;
+    background-color: black;
 }
 .main-container {
     height: 100%;
-    width:calc(100% - 200px);
+    width:calc(100% - 250px);
     overflow-y: auto;
-    /* Debug */
-    background-color: lightsalmon;
+    background-color:#141922;
 }
+section {
+    padding-left: 1rem;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+/* COMMON */
+/* Styles */
+main {
+    color: whitesmoke;
+}
+h6 {
+    color: rgba(255, 255, 255, 0.452);
+    margin: .5rem 0 2rem;
+}
+.description {
+    margin-top: .8rem;
+    text-align: center;
+}
+
 /* MAIN */
+/* Side bar */
+.side-bar-container {
+    margin: 0 auto;
+    padding: 2rem 1rem 1rem;
+    color: rgba(255, 255, 255, 0.452);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.logo-img {
+    width: 120px;
+    margin-bottom: 2rem;
+}
+.playlist {
+    flex-grow: 2;
+}
+.playlist h5 {
+    color: white;
+    margin-bottom: .4rem;
+}
+.playlist li {
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+.profile {
+    font-size: .8rem;
+}
+
+/* Top bar */
 .top-bar {
     width: 100%;
     height: 80px;
-    /* Debug */
-    background-color: darkgray;
+    background-color: #080B12;
+    color: whitesmoke;
+    font-size: .8rem;
+    font-weight: bold;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
+#btn {
+    display: inline-block;
+    border: 2px solid rgba(245, 245, 245, 0.777);
+    border-radius: 30px;
+    padding: .8em 3em;
+}
+/* Main content */
 .main-content {
     width: 100%;
     height:100%;
+}
+/* Nav section */
+.nav {
+    color: rgba(255, 255, 255, 0.452);
+}
+.nav ul {
+    padding-top: 1rem;
+    display: flex;
+    justify-content:center;
+    gap: 15px;
+}
+/* Recently played section */
+
+.box {
+    width: 200px;
+    height: 200px;
     /* Debug */
-    background-color: rgb(240, 158, 251);
+    background-color: lightgray;
+}
+.recently-played h2{
+    margin-bottom: 2rem
+}
+/* Popular artist section */
+.popular .box{
+    border-radius:50%;
+}
+.popular h2 {
+    margin-top: 2rem;
 }
 
 /* Footer */
