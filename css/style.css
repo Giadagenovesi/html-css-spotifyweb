@@ -36,7 +36,7 @@ footer {
     /* Debug */
     background-color: lightcoral;
 }
-.main {
+.main-container {
     height: 100%;
     width:calc(100% - 200px);
     overflow-y: auto;
@@ -47,7 +47,6 @@ footer {
 .top-bar {
     width: 100%;
     height: 80px;
-    position: fixed;
     /* Debug */
     background-color: darkgray;
 }
