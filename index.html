@@ -26,16 +26,32 @@
         <main>
             <div class="side-bar">
                 <div class="side-bar-container">
-                    <img class="logo-img" src="img/logo.svg" alt="Spotify logo">
-                    <div class="playlist">
-                        <h5>PLAYLIST</h5>
+                    <img class="full-logo" src="img/logo.svg" alt="Spotify logo">
+                    <img class="small-logo" src="img/logo-small.svg" alt="">
+                    <div class="menu">
                         <ul>
-                            <li>Home</li>
-                            <li>Cerca</li>
-                            <li>La tua libreria</li>
+                            <li>
+                                <img src="img/home.svg" alt="Home">
+                                <span> Home </span>
+                            </li>
+                            <li>
+                                <img src="img/search.svg" alt=" Cerca">
+                                <span>Cerca </span> 
+                            </li>
+                            <li>
+                                <img src="img/libreria.svg" alt="La tua libreria">
+                                <span>La tua libreria</span> 
+                            </li>
                         </ul>
-                        <ul>
-                            <li>Crea Playlist</li>
+                        
+                        <ul class="playlist">
+                            <li>
+                                <h5>PLAYLIST</h5>
+                            </li>
+                            <li>
+                                <span><i class="fa-solid fa-plus"></i></span> 
+                                Crea Playlist
+                            </li>
                             <li>Nome Playlist</li>
                             <li>Nome Playlist</li>
                             <li>Nome Playlist</li>
@@ -46,12 +62,18 @@
                         </ul>
                     </div>
                     <div class="profile">
-                        <span>Installa app</span>
+                        <div class="install">
+                            <img src="img/download.svg" alt="">
+                            <span>Installa app</span>
+                        </div>
                         <hr>
-                        <span>John Doe</span>
+                        <div class="profile-id">
+                            <img src="img/profile.svg" alt="">
+                            <span>John Doe</span>
+                        </div>
+                        
                     </div>
-                </div>
-                
+                </div>  
             </div>
             <div class="main-container">
                 <div class="top-bar">
@@ -59,28 +81,28 @@
                 </div>
                 <div class="main-content">
                     <!-- Nav section -->
-                    <div class="nav">
+                    <nav class="nav">
                         <ul>
                             <li>
-                                <a href="">Link</a>
+                                <a href="">IN EVIDENZA</a>
                             </li>
                             <li>
-                                <a href="">Link</a>
+                                <a href="">PODCAST</a>
                             </li>
                             <li>
-                                <a href="">Link</a>
+                                <a href="">CLASSIFICHE</a>
                             </li>
                             <li>
-                                <a href="">Link</a>
+                                <a href="">GENERI E MOOD</a>
                             </li>
                             <li>
-                                <a href="">Link</a>
+                                <a href="">NUOVE USCITE</a>
                             </li>
                             <li>
-                                <a href="">Link</a>
+                                <a href="">SCOPRI</a>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                     <!-- /Nav section -->
 
                     <!-- Recently played section -->
@@ -89,56 +111,56 @@
                         <div class="row">
                             <div class="col">
                                 <div class="box">
-                                    <img src="img/metal_lifting.jpg" alt="">
-                                </div>
-                                <div class="description">
-                                    <h3>lorem</h3>
-                                    <h6>Lorem</h6>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="box">
-                                    <img src="img/stranger.jpeg" alt="">
-                                </div>
-                                <div class="description">
-                                    <h3>lorem</h3>
-                                    <h6>Lorem</h6>
+                                    <img src="img/metal_lifting.jpg" alt="Metal">
+                                    <div class="description">
+                                        <h3>Heavy Metal</h3>
+                                        <h6>Subtitle</h6>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="box">
-                                    <img src="img/aquietplace.jpeg" alt="">
-                                </div>
-                                <div class="description">
-                                    <h3>lorem</h3>
-                                    <h6>Lorem</h6>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="box">
-                                    <img src="img/split.jpeg" alt="">
-                                </div>
-                                <div class="description">
-                                    <h3>lorem</h3>
-                                    <h6>Lorem</h6>
+                                    <img src="img/stranger.jpeg" alt="Stranger Things">
+                                    <div class="description">
+                                        <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                                        <h6>Kyle Dixon & Michael Stein</h6>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="box">
-                                    <img src="img/cure.jpeg" alt="">
-                                </div>
-                                <div class="description">
-                                    <h3>lorem</h3>
-                                    <h6>Lorem</h6>
+                                    <img src="img/aquietplace.jpeg" alt="A quiet place">
+                                    <div class="description">
+                                        <h3>A quiet place</h3>
+                                        <h6>Subtitle</h6>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="box">
-                                    <img src="img/sinister.jpeg" alt="">
+                                    <img src="img/split.jpeg" alt="Split">
+                                    <div class="description">
+                                        <h3>Split</h3>
+                                        <h6>Subtitle</h6>
+                                    </div>
                                 </div>
-                                <div class="description">
-                                    <h3>lorem</h3>
-                                    <h6>Lorem</h6>
+                            </div>
+                            <div class="col">
+                                <div class="box">
+                                    <img src="img/cure.jpeg" alt="Cure">
+                                    <div class="description">
+                                        <h3>A cure for wellness</h3>
+                                        <h6>Subtitle</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="box">
+                                    <img src="img/sinister.jpeg" alt="Sinister">
+                                    <div class="description">
+                                        <h3>Sinister</h3>
+                                        <h6>Subtitle</h6>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -146,21 +168,21 @@
                     <!-- Recently played section -->
 
                     <!-- Created for John section -->
-                    <section class="">
+                    <section class="created-john">
                         <h2 class="title">Creato per John Doe</h2>
                         <h6>Più ascolti, più accurati saranno i suggerimenti.</h6>
                         <div class="row">
                             <div class="col">
                                 <div class="box">
-                                    <img src="img/radar.jpeg" alt="">
-                                </div>
-                                <h3 class="description">lorem</h3>
+                                    <img src="img/radar.jpeg" alt="Radar">
+                                    <h3 class="description">Release Radar</h3>
+                                </div>    
                             </div>
                             <div class="col">
                                 <div class="box">
-                                    <img src="img/mixdaily.jpeg" alt="">
+                                    <img src="img/mixdaily.jpeg" alt="Mix">
+                                    <h3 class="description">Daily Mix 1</h3>
                                 </div>
-                                <h3 class="description">lorem</h3>
                             </div>
                         </div>
                     </section>
@@ -173,15 +195,15 @@
                         <div class="row">
                             <div class="col">
                                 <div class="box">
-                                    <img src="img/youg.jpeg" alt="">
-                                </div>
-                                <h3 class="description">lorem</h3>
+                                    <img src="img/youg.jpeg" alt="Lana del Rey">
+                                    <h3 class="description">Lana del Rey</h3>
+                                </div> 
                             </div>
                             <div class="col">
                                 <div class="box">
-                                    <img src="img/einaudi.jpeg" alt="">
+                                    <img src="img/einaudi.jpeg" alt="Einaudi">
+                                    <h3 class="description">Ludovico Einaudi</h3>
                                 </div>
-                                <h3 class="description">lorem</h3>
                             </div>
                         </div>
                     </section>
@@ -191,18 +213,44 @@
         </main>
 
         <!-- FOOTER -->
-        <footer>
+        <footer class="player">
             <div class="left">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis soluta et at impedit amet ipsa perferendis, vero pariatur, ad consectetur nihil esse veniam deserunt, laborum quam corrupti expedita cupiditate fugiat!
-
+               <img src="img/sinister.jpeg" alt="Sinister">
+                <div class="now-playing">
+                    <h3>Sinister</h3>
+                    <h6> Brano Nome</h6>
+                </div>
+                <div class="symbol">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+                
             </div>
             <div class="center">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis accusamus harum, ab nostrum in sit consequuntur dicta enim aut et commodi distinctio repellat doloremque dolorum soluta necessitatibus sunt vero laudantium!
-                
+               <div class="player-symbol">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="time">
+                    <span>0:25</span>
+                    <div class="minute">
+                        <div class="level"> </div>
+                    </div>
+                    <span>4:35</span>
+                </div>
             </div>
             <div class="right">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, commodi delectus! Perspiciatis, delectus quae. Asperiores quis rerum sunt tempora distinctio debitis impedit nisi sed in excepturi blanditiis, quia qui laudantium.
-                
+                <div class="symbol">
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="volume">
+                    <div class="level"></div>
+                </div>
             </div>
         </footer>
         

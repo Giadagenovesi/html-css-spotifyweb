@@ -1,0 +1,86 @@
+/* Spotify-md */
+@media screen and (max-width:1100px) {
+    /* Nav section*/
+    .nav li {
+        font-size: .8rem;
+    }
+
+    /* Main content */
+    .col {
+    width: calc(100% /4);
+    }
+    /* .main-content h2 {
+        font-size: 1.6rem;
+    }
+    h6 {
+        font-size: .7rem;
+    }
+    h3 {
+        font-size: 1rem;
+    } */
+    /* Player */
+    .left {
+        width:25%;
+    }
+    .center {
+        width:50%;
+    }
+    .right {
+        width:25%;
+    }
+}
+/* Spotify-small */
+@media screen and (max-width:700px) {
+      /* Nav section*/
+      .nav li {
+        font-size: .8rem;
+    }
+    /* Main content */
+    .col {
+        width: calc(100% /2);
+        }
+        .main-content h2 {
+            font-size: 1.6rem;
+        }
+        h6 {
+            font-size: .7rem;
+        }
+        h3 {
+            font-size: 1rem;
+        }
+         /* Player */
+        
+}
+/* Spotify-extra small */
+@media screen and (max-width:600px) {
+    /* Side bar */
+    .side-bar {
+        width: 50px;
+    }
+    .top-bar {
+        width: calc(100% - 50px);
+    }
+    .main-container {
+        width:calc(100% - 50px);
+    }
+    .full-logo {
+        display: none;
+    }
+    .small-logo {
+        display: block;
+        margin-bottom: .8rem;
+    }
+    .menu span {
+        display: none;
+    }
+    .playlist {
+        display: none;
+    }
+    .profile span {
+        display: none;
+    }
+    .profile hr{
+        display: none;
+    }
+    
+}
