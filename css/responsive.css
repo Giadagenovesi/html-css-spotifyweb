@@ -9,15 +9,6 @@
     .col {
     width: calc(100% /4);
     }
-    /* .main-content h2 {
-        font-size: 1.6rem;
-    }
-    h6 {
-        font-size: .7rem;
-    }
-    h3 {
-        font-size: 1rem;
-    } */
     /* Player */
     .left {
         width:25%;
@@ -47,9 +38,7 @@
         }
         h3 {
             font-size: 1rem;
-        }
-         /* Player */
-        
+        }  
 }
 /* Spotify-extra small */
 @media screen and (max-width:600px) {

@@ -59,7 +59,7 @@ section {
     width: calc(100% /6);
 }
 .box {
-     padding-right: .8rem; 
+    padding-right: .8rem;   
 }
 /* COMMON */
 /* Styles */
@@ -77,6 +77,37 @@ h3 {
     margin-top: .8rem;
     text-align: center;
 }
+.album-img {
+    position: relative;
+}
+.image {
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+}
+.play {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top:calc(50% - 20px);
+    left:calc(50% - 20px); 
+} 
+.fa-circle-play{
+    font-size: 40px;
+    color: white;
+    display: none;
+}
+.album-img:hover .image {
+    opacity: 0.3;
+}
+.album-img:hover .fa-circle-play {
+    display: block;
+    z-index: 2;
+}
+  
+/* .album-image:hover .play {
+    opacity: 1;
+} */
 
 /* MAIN */
 /* Side bar */
@@ -97,6 +128,10 @@ h3 {
 }
 .side-bar li {
     font-size: .8rem;
+    transition: all;
+}
+.side-bar li:hover{
+    color: white;
 }
 .menu img {
     width: 30px;
@@ -104,10 +139,6 @@ h3 {
 }
 .menu li {
     margin-bottom: .4rem;
-}
-.menu span {
-    display: inline-block;
-    color: rgba(255, 255, 255, 0.452);
 }
 .menu {
     flex-grow: 2;
@@ -127,17 +158,25 @@ h3 {
     padding: .7rem .8rem;
     color: black;
     background-color:rgba(255, 255, 255, 0.452);
+    transition: all;
+}
+.playlist span:hover {
+    background-color: white;
 }
 .profile {
     font-size: .8rem;
 }
 .install {
     margin-bottom: .4rem;
+    transition: all;
+}
+.install:hover {
+    color: white;
 }
 .profile-id {
     margin-top: .4rem;
-
 }
+
 .install img {
     width: 15px;
     vertical-align: middle;
@@ -169,8 +208,12 @@ h3 {
     border-radius: 30px;
     padding: .8em 3em;
     color: whitesmoke;
-    font-size: .8rem;
+    font-size: .75rem;
     font-weight: bold;
+    transition: all;
+}
+#btn:hover {
+    transform: scale(1.1);
 }
 /* Main content */
 .main-content {
@@ -185,6 +228,7 @@ h3 {
 .nav li {
     color: rgba(255, 255, 255, 0.452);
     font-size: .7rem;
+    transition: all;
 }
 .nav ul {
     padding-top: 1.5rem;
@@ -193,6 +237,12 @@ h3 {
     flex-wrap: wrap;
     justify-content:center;
     gap: 30px;
+}
+.nav li:first-child {
+    border-bottom:2px solid #ADFF2F;    
+}
+.nav li:hover {
+    color: white;
 }
 /* Recently played section */
 
@@ -299,13 +349,13 @@ h3 {
     margin-right: .7rem;
 }
 .volume {
-    width: 120px;
+    width: 30%;
     height: 4px;
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.452);
 }
 .volume .level {
-    width: 20px;
+    width: 20%;
     height: 4px;
     border-radius: 2px;
     background-color:white
