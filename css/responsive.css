@@ -59,7 +59,7 @@
         display: block;
         margin-bottom: .8rem;
     }
-    .menu span {
+    .menu a {
         display: none;
     }
     .playlist {

@@ -77,37 +77,6 @@ h3 {
     margin-top: .8rem;
     text-align: center;
 }
-.album-img {
-    position: relative;
-}
-.image {
-    display: block;
-    width: 100%;
-    transition: .5s ease;
-}
-.play {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top:calc(50% - 20px);
-    left:calc(50% - 20px); 
-} 
-.fa-circle-play{
-    font-size: 40px;
-    color: white;
-    display: none;
-}
-.album-img:hover .image {
-    opacity: 0.3;
-}
-.album-img:hover .fa-circle-play {
-    display: block;
-    z-index: 2;
-}
-  
-/* .album-image:hover .play {
-    opacity: 1;
-} */
 
 /* MAIN */
 /* Side bar */
@@ -129,9 +98,6 @@ h3 {
 .side-bar li {
     font-size: .8rem;
     transition: all;
-}
-.side-bar li:hover{
-    color: white;
 }
 .menu img {
     width: 30px;
@@ -160,9 +126,6 @@ h3 {
     background-color:rgba(255, 255, 255, 0.452);
     transition: all;
 }
-.playlist span:hover {
-    background-color: white;
-}
 .profile {
     font-size: .8rem;
 }
@@ -170,13 +133,11 @@ h3 {
     margin-bottom: .4rem;
     transition: all;
 }
-.install:hover {
-    color: white;
-}
 .profile-id {
     margin-top: .4rem;
+    color: white;
+    font-weight: bold;
 }
-
 .install img {
     width: 15px;
     vertical-align: middle;
@@ -190,7 +151,16 @@ h3 {
     vertical-align: middle;
     margin-right: .4rem;
 }
-
+/* Side bar Hover */
+.install:hover {
+    color: white;
+}
+.playlist span:hover {
+    background-color: white;
+}
+.side-bar li:hover{
+    color: white;
+}
 /* Top bar */
 .top-bar {
     position: fixed;
@@ -215,6 +185,7 @@ h3 {
 #btn:hover {
     transform: scale(1.1);
 }
+
 /* Main content */
 .main-content {
     padding-top: 80px;
@@ -224,6 +195,7 @@ h3 {
 .main-content h6 {
     margin: .5rem 0 2rem;
 }
+
 /* Nav section */
 .nav li {
     color: rgba(255, 255, 255, 0.452);
@@ -244,8 +216,8 @@ h3 {
 .nav li:hover {
     color: white;
 }
-/* Recently played section */
 
+/* Recently played section */
 .recently-played h2{
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
@@ -269,12 +241,39 @@ h3 {
     border-radius: 50%;
 }
 
-/* Footer */
+/*HOVER Main content image */
+.album-img {
+    position: relative;
+}
+.image {
+    display: block;
+    width: 100%;
+    transition: .3s;
+}
+.play {
+    display: none;
+    position: absolute;
+    top:calc(50% - 30px);
+    left:calc(50% - 30px); 
+} 
+.play i {
+    font-size: 60px;
+    color: white;
+}
+.album-img:hover .image {
+    opacity: 0.6;
+}
+.album-img:hover .play {
+    display: block;
+    z-index: 10;
+}
+
+/* FOOTER */
 /* Player */
 
 /* Player left */
 .left {
-    width: 30%;
+    width: 200px;
     display: flex;
     align-items: center;
     margin-left: .5rem;
@@ -288,29 +287,40 @@ h3 {
     font-size: .7rem; 
     margin-right: 3rem;
 }
+.left p {
+    color: rgba(255, 255, 255, 0.452);
+    font-size: .6rem;
+}
 .symbol i {
     color: rgba(255, 255, 255, 0.452);
     font-size: .8rem;
-    margin-right: .7rem;
+    margin-right: .5rem;
+}
+/* Hover */
+.symbol i:hover {
+    color: white;
 }
 
 /* Player center */
 .center {
     width: 40%;
+    margin: 0 auto;
 }
-.player-symbol {
+.player-symbol ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.1rem;
     color: white;
-    text-align: center;
     margin-bottom: 1rem;
 }
 .player-symbol i{
-    margin: 0 1rem;
+    margin: 0 .5rem;
 }
-.player-symbol i:nth-child(3) {
-    font-size: 1.6rem;
-    align-self: center;
+.player-symbol .start {
+    font-size: 2rem;
 }
+
 .time {
     display: flex;
     justify-content: center;
@@ -334,10 +344,17 @@ h3 {
     font-weight: bold;
     font-size: .6rem;
 }
+/* Hover */
+.minute .level:hover {
+    background-color: #ADFF2F;
+}
+.player-symbol i:hover{
+    transform: scale(1.1);
+}
 
 /* Player right */
 .right {
-    width: 30%;
+    width: 200px;
     margin-right: .5rem;
     display: flex;
     align-items: center;
@@ -346,18 +363,22 @@ h3 {
 .right .symbol i {
     color: white;
     font-size: .7rem;
-    margin-right: .7rem;
+    margin-right: .4rem;
 }
 .volume {
-    width: 30%;
+    width: 80px;
     height: 4px;
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.452);
 }
 .volume .level {
-    width: 20%;
+    width: 30px;
     height: 4px;
     border-radius: 2px;
     background-color:white
+}
+/* Hover */
+.volume .level:hover {
+    background-color: #ADFF2F;
 }
 
