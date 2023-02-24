@@ -106,6 +106,9 @@ h3 {
 .menu li {
     margin-bottom: .4rem;
 }
+.menu-list li:first-child  {
+    border-left: #ADFF2F 3px solid;
+}
 .menu {
     flex-grow: 2;
 }
@@ -210,9 +213,11 @@ h3 {
     justify-content:center;
     gap: 30px;
 }
-.nav li:first-child {
-    border-bottom:2px solid #ADFF2F;    
-}
+/* a.selected:before {
+    background-color: #ADFF2F;    
+} */
+
+/* Hover nav section */
 .nav li:hover {
     color: white;
 }
@@ -287,17 +292,22 @@ h3 {
     font-size: .7rem; 
     margin-right: 3rem;
 }
-.left p {
+.left a {
     color: rgba(255, 255, 255, 0.452);
     font-size: .6rem;
+    transition: all;
 }
 .symbol i {
     color: rgba(255, 255, 255, 0.452);
     font-size: .8rem;
     margin-right: .5rem;
+    transition: all;
 }
 /* Hover */
 .symbol i:hover {
+    color: white;
+}
+.left a:hover {
     color: white;
 }
 
@@ -338,6 +348,7 @@ h3 {
     height: 4px;
     border-radius: 2px;
     background-color: white;
+    transition: all;
 }
 .time span {
     color: white;
@@ -347,6 +358,7 @@ h3 {
 /* Hover */
 .minute .level:hover {
     background-color: #ADFF2F;
+    cursor: pointer;
 }
 .player-symbol i:hover{
     transform: scale(1.1);
@@ -375,10 +387,12 @@ h3 {
     width: 30px;
     height: 4px;
     border-radius: 2px;
-    background-color:white
+    background-color:white;
+    transition: all;
 }
 /* Hover */
 .volume .level:hover {
     background-color: #ADFF2F;
+    cursor: pointer;
 }
 
